@@ -53,6 +53,8 @@ class dbcreate extends Command
     
             config(["database.connections.mysql.database" => $schemaName]);
             
+            $this->info("database berhasil dibuat!");
+            
         } catch (\Throwable $th) {
             $this->info("database sudah ada!");
         }
